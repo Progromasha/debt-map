@@ -1,0 +1,29 @@
+body{
+background-color: rgb(232, 234, 214);
+}
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(117, 113, 113);
+    text-align: center;
+}
+
+.square:not(:last-child) {
+    margin-right: 100px;
+}
+
+.center {
+    display: table;
+    margin: auto;
+}
+
+.left {
+    vertical-align: middle;
+    font-family: Impact;
+}
+.right {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Impact;
+}
+

@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+}
+
+div {
+    border: 0.5px solid rgb(83, 41, 57);
+}
+
+.grid-container {
+    display: grid;
+    background-color: rgb(234, 235, 232);
+    padding: 10px;
+    grid-template-columns: 100px 780px;
+    /* column's width */
+    grid-template-rows: 60px 300px 100px;
+    /* row's height  (3 колонки...одна нижняя левая пустая)*/
+    grid-gap: 20px;
+    /* gaps between items*/
+    grid-template-areas: "Sw head" 
+                         "menu text" 
+                         ". text";
+    
+}
+
+.grid-item {
+    background-color: rgb(216, 191, 175);
+    padding: 5px;
+    text-align: center;
+}
+
+.Sw {
+    grid-area: Sw;
+}
+
+.head {
+    grid-area: head;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.text {
+    grid-area: text;
+}
