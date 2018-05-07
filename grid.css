@@ -17,8 +17,8 @@ div {
     grid-gap: 20px;
     /* gaps between items*/
     grid-template-areas: "Sw head" 
-                         "menu text" 
-                         ". text";
+                         "menu ." 
+                         ". .";
     
 }
 
@@ -38,8 +38,4 @@ div {
 
 .menu {
     grid-area: menu;
-}
-
-.text {
-    grid-area: text;
 }
