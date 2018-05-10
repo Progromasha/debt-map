@@ -3,7 +3,7 @@ body {
 }
 
 div {
-    border: 0.5px solid rgb(83, 41, 57);
+    border: 0.5px solid rgb(104, 44, 44); 
 }
 
 .grid-container {
@@ -12,14 +12,34 @@ div {
     padding: 10px;
     grid-template-columns: 100px 780px;
     /* column's width */
-    grid-template-rows: 60px 300px 100px;
+    grid-template-rows: 60px 200px 200px;
     /* row's height  (3 колонки...одна нижняя левая пустая)*/
     grid-gap: 20px;
     /* gaps between items*/
     grid-template-areas: "Sw   head" 
-                         "menu text" 
-                         ".    text";
+                         "menu block-top" 
+                         ".    block-down";
     
+}
+
+.block-top {
+    display: grid;
+    border: 0.5px solid rgb(104, 44, 44); 
+    padding: 20px;
+    grid-template-columns: 245px 200px 200px;
+    grid-template-rows: 35px 110px;
+    grid-gap: 15px 50px;
+    grid-template-areas: 
+                         " .   share-1  share-2"
+                         "calc share-1 share-2"
+                         "calc share-1 share-2";
+}
+
+.item-child {
+    border: 0.5px solid rgb(104, 44, 44);
+    background-color: rgb(133, 160, 149);
+    align-items: center;
+     justify-content: center;
 }
 
 .grid-item {
@@ -30,7 +50,7 @@ div {
 
 .Sw {
     grid-area: Sw;
-}
+}ss
 
 .head {
     grid-area: head;
@@ -40,6 +60,62 @@ div {
     grid-area: menu;
 }
 
-.text {
-    grid-area: text;
+.block-top {
+    display: grid;
+    border: 0.5px solid rgb(104, 44, 44); 
+    padding: 20px;
+    grid-template-columns: 245px 200px 200px;
+    grid-template-rows: 35px 110px;
+    grid-gap: 15px 50px;
+    grid-template-areas: 
+                         "d-c   share-1  share-2"
+                         "calc share-1 share-2"
+                         "calc share-1 share-2";
 }
+
+.block-top {
+    grid-area: block-top;
+}
+
+.block-down {
+    grid-area: block-down;
+}
+
+.calc {
+    grid-area: calc; /*calculator*/
+}
+
+.share-1{
+    grid-area: share-1; /*дележка))*/
+}
+
+.share-2{
+    grid-area: share-2; /*дележка))*/
+}
+
+.d-c {
+    grid-area: d-c;  /*date and clip in top*/
+    background-color:  rgb(216, 191, 175);
+    border: none;
+}
+
+.dc {
+    display: grid;
+    grid-template-columns: 70px 70px;
+    grid-template-rows: 35px;
+    grid-gap: 15px;
+    grid-template-areas: "date clip";
+    align-items: stretch;
+    justify-content: start;
+}
+
+.date {
+    grid-area: date; 
+    background-color: rgb(133, 160, 149);
+}
+
+.clip {
+    grid-area: clip;
+    background-color: rgb(133, 160, 149);
+}
+    
