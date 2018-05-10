@@ -16,9 +16,9 @@ div {
     /* row's height  (3 колонки...одна нижняя левая пустая)*/
     grid-gap: 20px;
     /* gaps between items*/
-    grid-template-areas: "Sw head" 
-                         "menu ." 
-                         ". .";
+    grid-template-areas: "Sw   head" 
+                         "menu text" 
+                         ".    text";
     
 }
 
@@ -26,7 +26,7 @@ div {
     background-color: rgb(216, 191, 175);
     padding: 5px;
     text-align: center;
-}
+} 
 
 .Sw {
     grid-area: Sw;
@@ -38,4 +38,8 @@ div {
 
 .menu {
     grid-area: menu;
+}
+
+.text {
+    grid-area: text;
 }
