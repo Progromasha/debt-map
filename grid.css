@@ -28,10 +28,10 @@ div {
     padding: 20px;
     grid-template-columns: 245px 200px 200px;
     grid-template-rows: 35px 110px;
+    grid-area: block-top;
     grid-gap: 15px 50px;
     grid-template-areas: 
-                         " .   share-1  share-2"
-                         "calc share-1 share-2"
+                         "d-c   share-1  share-2"
                          "calc share-1 share-2";
 }
 
@@ -50,7 +50,7 @@ div {
 
 .Sw {
     grid-area: Sw;
-}ss
+}
 
 .head {
     grid-area: head;
@@ -58,23 +58,6 @@ div {
 
 .menu {
     grid-area: menu;
-}
-
-.block-top {
-    display: grid;
-    border: 0.5px solid rgb(104, 44, 44); 
-    padding: 20px;
-    grid-template-columns: 245px 200px 200px;
-    grid-template-rows: 35px 110px;
-    grid-gap: 15px 50px;
-    grid-template-areas: 
-                         "d-c   share-1  share-2"
-                         "calc share-1 share-2"
-                         "calc share-1 share-2";
-}
-
-.block-top {
-    grid-area: block-top;
 }
 
 .block-down {
@@ -93,29 +76,23 @@ div {
     grid-area: share-2; /*дележка))*/
 }
 
-.d-c {
+.date-clip-container {
     grid-area: d-c;  /*date and clip in top*/
-    background-color:  rgb(216, 191, 175);
+    background-color: rgb(216, 191, 175);
     border: none;
-}
-
-.dc {
     display: grid;
-    grid-template-columns: 70px 70px;
-    grid-template-rows: 35px;
+    grid-template-columns: repeat(2, 70px);
+    grid-template-rows: 40px;
     grid-gap: 15px;
-    grid-template-areas: "date clip";
     align-items: stretch;
     justify-content: start;
 }
 
 .date {
-    grid-area: date; 
     background-color: rgb(133, 160, 149);
 }
 
 .clip {
-    grid-area: clip;
     background-color: rgb(133, 160, 149);
 }
     
