@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    background-color: rgb(234, 235, 232);
+    grid-template-columns: 780px;
+    grid-template-rows: 300px;
+    grid-template-areas: "box";
+}
+
+.box {
+    grid-area: box;
+    border: 1px solid blueviolet;
+}
