@@ -1,0 +1,63 @@
+
+div {
+    border: 0.5px solid rgb(104, 44, 44); 
+}
+
+.block-top {
+    display: grid;
+    border: 0.5px solid rgb(104, 44, 44); 
+    padding: 20px;
+    grid-template-columns: 245px 200px 200px;
+    grid-template-rows: 35px 110px;
+    grid-area: block-top;
+    grid-gap: 15px 50px;
+    grid-template-areas: 
+                         "d-c   share-1  share-2"
+                         "calc share-1 share-2";
+}
+
+.item-child {
+    border: 0.5px solid rgb(104, 44, 44);
+    background-color: rgb(133, 160, 149);
+    align-items: center;
+     justify-content: center;
+}
+
+.grid-item {
+    background-color: rgb(216, 191, 175);
+    padding: 5px;
+    text-align: center;
+} 
+
+.calc {
+    grid-area: calc; /*calculator*/
+}
+
+.share-1{
+    grid-area: share-1; /*дележка))*/
+}
+
+.share-2{
+    grid-area: share-2; /*дележка))*/
+}
+
+.date-clip-container {
+    grid-area: d-c;  /*date and clip in top*/
+    background-color: rgb(216, 191, 175);
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 70px);
+    grid-template-rows: 40px;
+    grid-gap: 15px;
+    align-items: stretch;
+    justify-content: start;
+}
+
+.date {
+    background-color: rgb(133, 160, 149);
+}
+
+.clip {
+    background-color: rgb(133, 160, 149);
+}
+    

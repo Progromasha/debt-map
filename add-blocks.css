@@ -1,0 +1,49 @@
+body {
+    margin: 0px;
+}
+
+div {
+    border: 0.5px solid rgb(104, 44, 44);
+    background-color: rgb(67, 66, 109);
+    padding: 5px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    background-color: rgb(234, 235, 232);
+    padding: 10px;
+    grid-template-columns: 100px 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+    grid-template-areas: "Sw   head" 
+                         "menu placeholder" ;
+    
+}
+
+.placeholder {
+display: grid;
+grid-area: placeholder;
+background-color: rgb(97, 212, 164);
+grid-template-columns: 1fr;
+grid-auto-rows: minmax(50px,auto);
+}
+
+.block {
+    grid-area: block;
+}
+
+.Sw {
+    grid-area: Sw;
+}
+
+.head {
+    grid-area: head;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+
+ 
