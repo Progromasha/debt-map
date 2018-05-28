@@ -1,20 +1,28 @@
-function create_card(x1) {
-    let x = "карточку";
-    console.log("создаю " + x + " про " + x1);
-    console.log("заполняю " + x + " про " + x1);
+'use strict';
+
+function value_x(p) {
+    console.log (p.j + p.s + " in " + p.y + "row " + p.v + p.x);
 }
 
-create_card("воду");
+let p;
 
-create_card("свет");
+p = {};
+p.v = "x= ";
+p.x = 1
+p.j = "";
+p.s = "";
+p.y = "first "
 
-create_card("ток))");
+value_x (p);
 
-create_card("jkvfldkj");
+p.x = p.x + 1;
+p.y = "second "; 
+p.s = "and ";
+p.j = "";
+value_x (p);
 
-console.log("x=" + x);
-let s = "x=" + x;
-
-x = x+1;
-
-
+p.x = p.x + 1;
+p.y = "third ";
+p.j="lastly,"
+p.s = "";
+value_x (p);
